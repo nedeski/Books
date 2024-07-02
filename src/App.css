@@ -1,0 +1,101 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  font-size: 25px;
+  border: none;
+}
+
+.search-bar__input {
+  padding: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-bar__button {
+  padding: 7px 15px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+.sort {
+  margin-bottom: 20px;
+}
+
+.sort-select {
+  border-radius: 7px;
+  padding: 7px;
+  border: 1px solid #ccc;
+}
+
+.book-list {
+  margin-top: 20px;
+}
+
+.book-list__ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.book {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.book-title,
+.book-author,
+.book-genre {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.book-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.book-title b,
+.book-author b,
+.book-genre b {
+  font-weight: bold;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .book {
+    padding: 5px;
+  }
+  .search-bar__input {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .search-bar__button {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 330px) {
+  .book {
+    padding: 5px;
+  }
+  .search-bar__input {
+    border-radius: 7px;
+  }
+
+  .search-bar__button {
+    border-radius: 7px;
+  }
+}
