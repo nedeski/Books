@@ -11,10 +11,14 @@ const App = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const jsonRes = await fetch("/data/books.json");
+        const jsonRes = await fetch(
+          "https://nedeski.github.io/Books/data/books.json"
+        );
         const jsonBooks = await jsonRes.json();
 
-        const csvRes = await fetch("/data/books.csv");
+        const csvRes = await fetch(
+          "https://nedeski.github.io/Books/data/books.csv"
+        );
         const csvText = await csvRes.text();
         const csvBooks = csvText.split("\n").map((line) => {
           const [id, title, author, genre] = line.split(",");
